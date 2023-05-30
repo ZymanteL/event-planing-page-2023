@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer {
+    background-image: url("https://clickup.com/images/main/bg-main-gradient.svg");
+    width: 100vw;
+    height: 836px;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrapper-page-footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-subscribe {
+    padding: 40px;
+    width: 70vw;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 15px 45px rgba(16,30,54,.16);
+}
+
+.subscribe-text {
+    font-size: 31px;
+    width: 35vw;
+}
+
+.email-input {
+    justify-content: center;
+}
+
+.footer-input {
+    font-size: 14px;
+    padding: 20px 110px 20px 10px;
+    border-radius: 13px;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.footer-btn {
+    background: #7b68ee;
+    box-shadow: 0 11.2px 28px #7b68ee80;
+    border-radius: 9px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 20px 35px;
+}
