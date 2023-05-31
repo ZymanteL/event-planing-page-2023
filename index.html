@@ -9,5 +9,46 @@
   </head>
   <body>
     <!-- Middle part -->
+    <main>
+      <section class="middle-section">
+        <div class="consultant-select-container">
+          <div class="consultant-select-title">
+            <span class="subheading">Search</span>
+            <h2 class="heading-secondary">Browse all upcoming events.</h2>
+          </div>
+          <div class="consultant-select-criteria">
+            <div class="consultant-select-wrapper">
+              <select class="consultant-select-item" name="type">
+                <option value>Any Event Type</option>
+                <option value="community">Community Event</option>
+                <option value="conference">Conference</option>
+                <option value="webinar">Webinar</option>
+                <option value="clickup">ClickUp hosted</option>
+                <option value="sponsored">Sponsored</option>
+              </select>
+            </div>
+            <div class="consultant-select-wrapper">
+              <select class="consultant-select-item" name="location">
+                <option value>Any Location</option>
+                <option value="virtual">Virtual</option>
+                <option value="both">In-Person & Virtual</option>
+                <option value="in-person">In-Person</option>
+              </select>
+            </div>
+            <div class="consultant-select-wrapper">
+              <select class="consultant-select-item" name="region">
+                <option value>Any Region</option>
+                <option value="global">Global</option>
+                <option value="amer">AMER</option>
+                <option value="emea">EMEA</option>
+                <option value="latam">LATAM</option>
+                <option value="apac">APAC</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="consultant-profiles-container"></div>
+      </section>
+    </main>
   </body>
 </html>
