@@ -1,122 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Rubik", sans-serif;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
 
-  .header {
-    display: flex;
-    width: 100%;
-    height: 60vh;
-    flex-direction: column;
-  }
+html {
+  font-size: 62.5%;
+}
 
-  .background-img {
-    height: 70%;
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-    top: -28vh;
-    z-index: 0;
-  }
+.header {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  flex-direction: column;
+}
 
-  .navigation {
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 12vh;
-    font-size: 1.6rem;
-    justify-content: center;
-    color: white;
-    font-weight: 900;
-    align-items: center;
-  }
+.background-img {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  top: -28vh;
+  z-index: 0;
+}
 
-  .nav-menu {
-    width: 50vh;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    cursor: pointer;
-  }
+.navigation {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 12vh;
+  font-size: 1.6rem;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  align-items: center;
+}
 
-  .nav-logo {
-    width: 30vh;
-    font-size: 2.5rem;
-    text-align: center;
-  }
+.nav-menu {
+  width: 50vh;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+}
 
-  .nav-buttons {
-    width: 45vh;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.2rem;
-  }
+.nav-logo {
+  width: 30vh;
+  font-size: 2.5rem;
+  text-align: center;
+}
 
-  .nav-menu-product, .nav-menu-solutions, .nav-menu-learn, .nav-menu-pricing {
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    padding: 0 1.5rem;
-    border-radius: 1rem;
-  }
+.nav-buttons {
+  width: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
 
-  .nav-menu-product:hover, .nav-menu-solutions:hover, .nav-menu-learn:hover, .nav-menu-pricing:hover {
-    background: rgba(255, 255, 255, 0.271);
-    transition: 0.5s;
-    opacity: 1rem;
-  }
+.nav-menu-product,
+.nav-menu-solutions,
+.nav-menu-learn,
+.nav-menu-pricing {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
 
-  .sign-up-button, .log-in-button {
-    padding: 1.2rem 1.5rem;
-    font-weight: 900;
-    font-size: 1.5rem;
-    border-radius: 0.8rem;
-    border: none;
-    cursor: pointer;
-  }
+.nav-menu-product:hover,
+.nav-menu-solutions:hover,
+.nav-menu-learn:hover,
+.nav-menu-pricing:hover {
+  background: rgba(255, 255, 255, 0.271);
+  transition: 0.5s;
+  opacity: 1rem;
+}
 
-  .sign-up-button {
-    color: rgba(150, 31, 183, 0.733);
-  }
+.sign-up-button,
+.log-in-button {
+  padding: 1.2rem 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
 
-  .log-in-button {
-    background: rgba(209, 206, 209, 0.198);
-    color: white;
-  }
+.sign-up-button {
+  color: rgba(150, 31, 183, 0.733);
+}
 
-  .sign-up-button:hover, .log-in-button:hover {
-    transform: translateY(0.2rem);
-    transition: 0.5s;
-  }
+.log-in-button {
+  background: rgba(209, 206, 209, 0.198);
+  color: white;
+}
 
-  .description {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 20vh;
-    gap: 2rem;
-    color: white;
-    padding: 1.5rem;
-  }
+.sign-up-button:hover,
+.log-in-button:hover {
+  transform: translateY(0.2rem);
+  transition: 0.5s;
+}
 
-  .description h1 {
-    font-size: 6rem;
-    letter-spacing: -0.2rem;
-  }
+.description {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 20vh;
+  gap: 2rem;
+  color: white;
+  padding: 1.5rem;
+}
 
-  .description p {
-    padding: 0.5rem;
-    font-size: 1.6rem;
-    width: 70vh;
-    text-align: center;
-    letter-spacing: 0.02rem;
-  }
+.description h1 {
+  font-size: 6rem;
+  letter-spacing: -0.2rem;
+}
+
+.description p {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  width: 70vh;
+  text-align: center;
+  letter-spacing: 0.02rem;
+}
