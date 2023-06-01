@@ -109,7 +109,7 @@ html {
   margin: 0 4px;
 }
 
-.footer-copyright a:last-child:after {
+.footer-copyright a:last-child::after {
   content: " ";
 }
 
