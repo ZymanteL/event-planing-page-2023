@@ -16,6 +16,7 @@
 }
 
 .background-img {
+  background-image: url(https://clickup.com/images/download/bg_gradient__download.svg);
   height: 70%;
   width: 100%;
   position: absolute;
