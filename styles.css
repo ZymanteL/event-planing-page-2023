@@ -1,11 +1,12 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
 }
 @media (max-width: 75em) {
   html {
@@ -18,11 +19,132 @@ html {
   }
 }
 body {
-  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #333;
   overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  flex-direction: column;
+}
+
+.background-img {
+  background-image: url(https://clickup.com/images/download/bg_gradient__download.svg);
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  top: -28vh;
+  z-index: 0;
+}
+
+.navigation {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 12vh;
+  font-size: 1.6rem;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 50vh;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.nav-logo {
+  width: 30vh;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.nav-buttons {
+  width: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+
+.nav-menu-product,
+.nav-menu-solutions,
+.nav-menu-learn,
+.nav-menu-pricing {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+
+.nav-menu-product:hover,
+.nav-menu-solutions:hover,
+.nav-menu-learn:hover,
+.nav-menu-pricing:hover {
+  background: rgba(255, 255, 255, 0.271);
+  transition: 0.5s;
+  opacity: 1rem;
+}
+
+.sign-up-button,
+.log-in-button {
+  padding: 1.2rem 1.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-button {
+  color: rgba(150, 31, 183, 0.733);
+}
+
+.log-in-button {
+  background: rgba(209, 206, 209, 0.198);
+  color: white;
+}
+
+.sign-up-button:hover,
+.log-in-button:hover {
+  transform: translateY(0.2rem);
+  transition: 0.5s;
+}
+
+.description {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 20vh;
+  gap: 2rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+.description h1 {
+  font-size: 6rem;
+  letter-spacing: -0.2rem;
+}
+
+.description p {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  width: 70vh;
+  text-align: center;
+  letter-spacing: 0.02rem;
 }
 
 .middle-section {
@@ -291,4 +413,152 @@ body {
 }
 .event-profiles-item:nth-child(9) .event-type {
   color: #49ccf9;
+}
+
+.page-footer {
+  background-image: url("https://clickup.com/images/main/bg-main-gradient.svg");
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper-page-footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-subscribe {
+  padding: 40px;
+  width: 70vw;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 15px 45px rgba(16, 30, 54, 0.16);
+}
+
+.subscribe-text {
+  font-size: 2.6rem;
+  width: 39vw;
+}
+
+.email-input {
+  justify-content: center;
+}
+
+.footer-input {
+  font-size: 1.4rem;
+  padding: 20px 110px 20px 10px;
+  border-radius: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.footer-btn {
+  background: #7b68ee;
+  box-shadow: 0 11.2px 28px #7b68ee80;
+  border-radius: 9px;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 20px 35px;
+  margin: 0px 10px;
+}
+
+.wrapper-support {
+  padding: 20px;
+  width: 70vw;
+  color: #fff;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.support-box-item {
+  font-size: 1.5rem;
+  padding: 10px;
+  align-self: center;
+}
+
+.footer-navigation {
+  padding: 5px;
+  width: 70vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-navigation a,
+.footer-copyright a,
+.footer-copyright p {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-navigation a {
+  margin: 20px;
+  font-size: 1.6rem;
+  width: 90px;
+  height: 30px;
+}
+
+.footer-copyright {
+  padding: 20px;
+  width: 70vw;
+  justify-content: space-between;
+}
+
+.footer-copyright a:after {
+  color: #fff;
+  content: "|";
+  margin: 0 4px;
+}
+
+.footer-copyright a:last-child::after {
+  content: " ";
+}
+
+.footer-copyright-left {
+  flex-wrap: wrap;
+}
+
+.footer-copyright-left p {
+  margin-right: 4px;
+}
+
+.fa-brands {
+  color: #fff;
+  font-size: 2.4rem;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper-subscribe {
+    padding: 5px;
+    flex-direction: column;
+  }
+  .subscribe-text {
+    font-size: 2rem;
+    width: 60vw;
+    padding: 10px;
+  }
+
+  .email-input {
+    flex-direction: column;
+    width: 60vw;
+  }
+
+  .footer-btn {
+    margin: 10px 0px;
+  }
+
+  .wrapper-support {
+    flex-direction: column;
+  }
+
+  .footer-navigation {
+    justify-content: center;
+  }
 }
