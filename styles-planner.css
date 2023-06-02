@@ -8,6 +8,17 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
@@ -19,11 +30,17 @@ body {
 }
 .header {
   height: 100vh;
-  min-width: 36.7rem;
+  min-width: 30%;
   border-right: 0.1rem solid rgb(128, 128, 128, 0.2);
 }
 .main-container {
-  width: 100vw;
+  height: 100vh;
+  width: 70%;
+}
+@media (max-width: 42em) {
+  .views-bar-container {
+    display: flex;
+  }
 }
 .views-bar-upper-part,
 .views-bar-lower-part {
@@ -31,24 +48,58 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-bottom: 0.1rem solid rgb(128, 128, 128, 0.2);
 }
+@media (max-width: 84em) {
+  .views-bar-upper-part,
+  .views-bar-lower-part {
+    justify-content: center;
+  }
+}
+@media (max-width: 59em) {
+  .views-bar-upper-part,
+  .views-bar-lower-part {
+    padding: 1.2rem 1.6rem;
+  }
+}
+
 .views-bar-options-items {
   list-style: none;
   display: flex;
+}
+@media (max-width: 42em) {
+  .views-bar-options-items {
+    flex-direction: column;
+  }
 }
 .views-bar-options-items li {
   padding: 0 1.4rem;
   border-right: 0.1rem solid rgb(128, 128, 128, 0.2);
   cursor: pointer;
 }
+@media (max-width: 84em) {
+  .views-bar-options-items li {
+    padding: 0 0.8rem;
+  }
+}
+@media (max-width: 42em) {
+  .views-bar-options-items li {
+    border-right: none;
+  }
+  ion-icon {
+    min-width: 3.2rem;
+    min-height: 3.2rem;
+  }
+}
+
 .views-bar-options-items li:hover {
   color: #7b68ee;
 }
 .views-bar-options-items:first-child [name="people"] {
   background-color: rgb(3, 162, 253);
-  width: 3.2rem;
-  height: 3.2rem;
+  min-width: 3.2rem;
+  min-height: 3.2rem;
   border-radius: 25%;
   color: #fff;
 }
@@ -61,13 +112,28 @@ body {
   padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
 }
+@media (max-width: 59em) {
+  .views-bar-sharing-items li,
+  .views-bar-filter li {
+    padding: 1rem 1.4rem;
+  }
+}
 .views-bar-sharing-items li:hover,
 .views-bar-filter li:hover {
   background-color: rgb(128, 128, 128, 0.1);
 }
-
+.views-bar-search {
+  padding: 0.36rem 0.8rem 0.36rem 0;
+  padding-right: 8rem;
+}
+@media (max-width: 59em) {
+  .views-bar-search {
+    padding: 1.6rem 1.8rem;
+  }
+}
 .views-bar-search__input {
   border: none;
+  text-align: center;
 }
 .views-bar-search__input:focus {
   outline: none;
@@ -77,4 +143,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+}
+@media (max-width: 42em) {
+  .center-text {
+    flex-direction: column;
+  }
 }
