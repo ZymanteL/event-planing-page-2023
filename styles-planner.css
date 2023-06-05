@@ -413,4 +413,8 @@ body {
   padding: 10px;
 }
 
-
+@media (max-height: 750px) {
+  .left-section-lower-part {
+    position: relative;
+    top: 20vh;
+  }
