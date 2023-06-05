@@ -337,10 +337,3 @@ body {
     gap: 1.5rem;
   }
 }
-
-@media (max-height: 750px) {
-  .left-section-lower-part {
-    position: relative;
-    top: 20vh;
-  }
-}
